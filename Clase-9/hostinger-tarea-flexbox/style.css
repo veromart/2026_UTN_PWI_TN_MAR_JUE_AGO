@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "DM Sans", sans-serif;
+}
+
+body {
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vmax;
+}
+
+
+
+/* Tarjeta de plan */
+.tarjeta-plan {
+    background-color: white;
+    border-radius: 12px;
+    padding: 35px;
+    max-width: 360px;
+    width: 100%;
+}
+
+.tarjeta-plan__header{
+    display: flex;
+    justify-content: end;
+}
+
+.descuento {
+    background-color: rgb(242, 240, 255);
+    color: rgb(103, 103, 237);
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 6px;
+
+    padding: 4px 10px;
+    margin: 0;
+
+}
+
+.titulo-plan {
+    font-size: 18px;
+    font-weight: 599px;
+    color: #222225;
+    margin-bottom: 12px;
+
+}
+
+.descripcion-plan {
+
+    font-size: 14px;
+    font-weight: 399px;
+    color: #222225;
+    margin-bottom: 16px;
+}
+
+.precio-anterior {
+
+    text-decoration: line-through;
+    color: #000000BF;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.precio-actual {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.periodo {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.boton-elegir {
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(123, 102, 255);
+    border-radius: 12px;
+    padding: 12px 0;
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    display: block;
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+p {
+    font-size: 12px;
+    font-weight: 400;
+    color: #797980;
+    margin-bottom: 20px;
+}
+
+
+
