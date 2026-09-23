@@ -52,6 +52,8 @@ Existen 5 tipos de position:
         - El elemento se superpone a todo desde el padre, deja de estar en el mismo plano que sus hermanos
     - fixed:
         - Nos permite posicionar y ANCLAR/PEGAR un elemento al viewport
+    - sticky:
+        - Nos permite posicionar y anclar/pegar un elemento dentro de un padre y conservando su posicion relativa
 
 Si tu elemento es position distinto de static podes usar las propiedades:
     - top
@@ -71,6 +73,10 @@ header{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
+    position: sticky;
+    top: 0;
+    z-index: 2;
 }
 
 
@@ -113,4 +119,38 @@ header{
     position: fixed;
     right: 16px;
     bottom: 16px;
+}
+
+
+.code-container{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    background-color: black;
+}
+
+.code{
+    width: 800px;
+    position: relative;
+}
+
+.code-header{
+    background-color: rgb(65, 65, 65);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    height: 40px;
+    padding: 10px;
+    color: white;
+    width: 100%;
+    position: sticky;
+  
+    top: 70px; /* El espacio minimo que puede haber entre el top del viewport y yo */
+}
+
+.code-content{
+    background-color: rgb(27, 27, 27);
+    height: 1000px;
+    color: white;
+    padding: 10px;
 }
