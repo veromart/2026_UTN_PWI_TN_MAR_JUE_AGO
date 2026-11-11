@@ -1,5 +1,8 @@
 import React from 'react'
 import ProductCard from './Components/ProductCard/ProductCard'
+import WspContactOption from './Components/WspContactOption/WspContactOption'
+import Counter from './Components/Counter/Counter'
+import LuzPrendida from './Components/LuzPrendida/LuzPrendida'
 
 
 /* 
@@ -22,17 +25,42 @@ export default function App() {
   return (
     <div>
       <h1>Hola mundo</h1>
-      <ProductCard 
+      <ProductCard
         titulo={"Tv samsung 42"}
         descripcion={'lorem'}
         precio={200}
-      /> 
-      <ProductCard 
+      />
+      <ProductCard
         titulo={"Mesa ratona"}
         descripcion={'lorem 2'}
         precio={20}
         descuento={10}
       />
+
+      <WspContactOption
+        nombre="Matias"
+        ultimo_mensaje="Hola, aprobaste"
+        fecha="19:40"
+        cantidad_mensajes_no_leidos={0}
+      />
+
+      <WspContactOption
+        nombre="Ayelen"
+        ultimo_mensaje="¿Está en el repo?"
+        fecha="19:58"
+        cantidad_mensajes_no_leidos={3}
+      />
+      <WspContactOption
+        nombre="Veronica"
+        ultimo_mensaje="Nos vemos mañana"
+        fecha="19:30"
+        cantidad_mensajes_no_leidos={1}
+      />
+
+
+      <Counter/>
+    
+      <LuzPrendida/>
     </div>
   )
 }
